@@ -3,10 +3,10 @@ layout: page
 permalink: guide/
 ---
 
-<h1>API Guide</h1>
+<h1>API guide</h1>
 <h2>App registration</h2>
 <p>Before using the API, you must register your application. To do that, first open an account on <a href="https://binary.com">Binary.com</a> (either a virtual-money or a real-money account). Then go to <a href="https://www.binary.com/en/user/security/api_tokenws.html">Settings, API Token</a> and create a per-app token with Admin scope. Then <a href="/applications/">register the app</a> to obtain your app_id.</p>
-<h2>Client Authentication</h2>
+<h2>Client authentication</h2>
 <p>Certain API calls require client authentication (e.g. <a href="/api#portfolio">portfolio</a>) whilst other calls do not (e.g. <a href="/api#ticks">ticks</a>).</p>
 There are 2 ways to do client authentication:</p>
 <ol>
@@ -18,7 +18,7 @@ There are 2 ways to do client authentication:</p>
     </li>
 </ol>
 <p>With a user's API token (either a per-app token, or a token obtained via Oauth), you may call <a href="/api#authorize">authorize</a>.</p>
-<h2>Token Scopes</h2>
+<h2>Token scopes</h2>
 <p>Note that tokens can possess one or more of these scopes:</p>
 <ul class="bullet">
     <li>'read' - for API calls that only read client data</li>
@@ -27,7 +27,7 @@ There are 2 ways to do client authentication:</p>
     <li>'admin' - for API calls that change client settings</li>
 </ul>
 <p>The drop-down list in the <a href="/api">API Playground</a> indicates which call needs which scope.</p>
-<h2>Binary.com Account Opening</h2>
+<h2>Binary.com account opening</h2>
 <p>To open binary.com accounts via the API, start by verifying the user's email address using
     <a href="/api#verify_email">verify_email</a>. You may then call
     <a href="/api#new_account_virtual">new_account_virtual</a> to open a virtual-money account. Note: you may top-up virtual-money funds using
